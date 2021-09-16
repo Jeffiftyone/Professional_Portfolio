@@ -1,0 +1,169 @@
+body{
+    margin:0;
+    background-color: #aca4b4;
+}
+/* for card headers */
+h2{
+    color:seashell;
+    font-family: Helvetica, sans-serif;
+    font-size: 200%;
+    padding-left:40px;
+}
+/* project text */
+h3{
+    color:seashell;
+    font-family: Helvetica, sans-serif;
+    font-size: 150%;
+    padding:20px;
+}
+/* for use on project images */
+h4{
+    color: seashell;
+    font-family: Helvetica, sans-serif;
+    font-size: 150%;
+    padding:20px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+nav{
+    text-align:right;
+    
+    background-color:
+    #ac9db4;
+    padding-bottom: 10px;
+}
+
+a{
+ 
+    font-family: Helvetica, sans-serif;
+    font-size: 120%;
+    color:seashell;
+    margin:5px;
+}
+
+/* section to hold the cards with info */
+section{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    background-color: #9794b4;
+}
+.projects{
+    background-color: #aca4b4;
+    display:flex;
+    justify-content: space-evenly;
+    padding-bottom: 15px;
+
+}
+
+/* Styling for info Cards that are in flex*/
+.card{
+    width:20%;
+    padding:10px
+}
+.card header{
+    text-align:center;
+    color:seashell;
+    font-family: Helvetica, sans-serif;
+    font-size: 125%;
+    opacity:0.9;
+}
+
+.card p{
+    text-align: left; 
+    color:seashell;
+    font-family: Helvetica, sans-serif;
+    font-size: 100;
+    opacity:0.9;
+}
+/* Container that is over the main background */
+.container{
+    
+    overflow: hidden;
+}
+.container h1{
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 275px;
+    text-align: center; 
+    color:seashell;
+    font-family: Helvetica, sans-serif;
+    font-size: 420%;
+  
+}
+.container p{
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 400px;
+    text-align: center; 
+    color:seashell;
+    font-family: Helvetica, sans-serif;
+    font-size: 200%;
+    opacity:0.9;
+}
+
+/* Profile photo */
+.profile{
+    display: block;
+    background:url("./images/profilephoto.jfif");
+    background-position: center center;
+    background-size: 250px;
+    height: 175px;
+    width:175px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #ffffff;
+    padding: 10px;
+    border-radius: 50%;
+}
+/* main background image/jumbotron*/
+.sliding-bg{
+    background: url("./images/Sky_by_Pattern_Vomit.png") repeat-x;
+    filter:brightness(90%);
+    height: 600px;
+    width: 5076px;
+    animation: slide 60s linear infinite;
+}
+
+/* project 1 */
+#project1{
+    background-image: url(./images/Blackjack21.jpg);
+    background-position: center center;
+    background-size: 300px;
+    height: 200px;
+    width: 250px;
+    padding: 10px;
+
+    border:3px solid#ffff;
+
+
+
+}
+/* animation code */
+@keyframes slide{
+    0%{
+        transform: translate3d(0,0,0)
+    }
+    100%{
+        transform: translate3d(-900px,0,0);
+    }
+}
+
+/* for smaller screens and mobile */
+@media screen and (max-width:768px) {
+    .card{
+        width:45%;
+    }
+
+}
+@media screen and (max-width: 576px) {
+    .card{
+        
+        width:80%;
+    }
+  }
